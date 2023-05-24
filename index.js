@@ -9,17 +9,21 @@ document.body.style.backgroundColor = "silver";
 var h1 = document.getElementById("title");
 h1.style.color = "green";
 
-var h3 = document.getElementsByTagName("h3");
-for (var i = 0; i < h3.length; i++) {
+let h3 = document.getElementsByTagName("h3");
+for (let i = 0; i < h3.length; i++) {
   h3[i].style.textTransform = "uppercase";
 }
-let fruList = document.createElement("fruList");
-fruList.innerHTML = "Oranges";
-document.getElementById('style').appendChild(fruList)
 
-let vegList = document.createElement("vegList");
-vegList.innerHTML = "cauliflower";
-document.getElementById('style').appendChild(vegList)
+let fruList = document.getElementById("fruList");
+let newFruit = document.createElement("li");
+newFruit.textContent = "Oranges";
+fruList.appendChild(newFruit);
+
+let vegList = document.getElementById("vegList");
+let newVegetable = document.createElement("li");
+newVegetable.textContent = "Carrots";
+vegList.appendChild(newVegetable);
+
 
 
 
