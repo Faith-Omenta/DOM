@@ -16,12 +16,12 @@ for (let i = 0; i < h3.length; i++) {
 
 let fruList = document.getElementById("fruList");
 let newFruit = document.createElement("li");
-newFruit.textContent = "Oranges";
+newFruit.textContent = "pears";
 fruList.appendChild(newFruit);
 
 let vegList = document.getElementById("vegList");
 let newVegetable = document.createElement("li");
-newVegetable.textContent = "Carrots";
+newVegetable.textContent = "cauliflower";
 vegList.appendChild(newVegetable);
 
 
